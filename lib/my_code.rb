@@ -7,7 +7,6 @@ def map(array_in)
 end
 
 def reduce(array_in, start = 0)
-  if(start = )
   output = start
   array_in.size.times do |counter|
     output = yield(output, array_in[counter])
