@@ -12,5 +12,8 @@ def reduce(array_in, start = 0)
   array_in.size.times do |counter|
     output = yield(output, array_in[counter])
   end
+  if output === nil
+    return false
+  end
   output
 end
