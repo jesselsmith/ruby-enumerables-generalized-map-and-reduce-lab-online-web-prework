@@ -9,7 +9,7 @@ end
 def reduce(array_in, start = 0)
   output = start
   array_in.size.times do |counter|
-    output = yield(output, array_in[counter])
+    output = yield(array_in[counter], output)
   end
   if output === nil
     return false
